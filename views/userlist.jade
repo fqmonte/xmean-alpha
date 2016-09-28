@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1.
+        User List
+    a(href="/newuser") Criar Novo!
+    ul
+        each user, i in userlist
+            li
+                p Nome: #{user.nome} Email: #{user.email} Telefone:#{user.telefone}
